@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, b as createAstro, a as renderComponent, d as addAttribute } from '../chunks/astro/server_J1YT_JX1.mjs';
 import { $ as $$Container, a as $$Layout } from '../chunks/Layout_Kh1ByzcD.mjs';
 import { f as formatDate } from '../chunks/utils_BW1fk8xr.mjs';
-import { g as getCollection } from '../chunks/_astro_content_CCpvKU5_.mjs';
+import { g as getCollection } from '../chunks/_astro_content_CB4k20Ji.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$ArticleIcon = createComponent(($$result, $$props, $$slots) => {
