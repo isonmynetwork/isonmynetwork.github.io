@@ -1,8 +1,8 @@
 /* empty css                                 */
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as renderComponent, d as addAttribute, b as createAstro } from '../chunks/astro/server_D2dAgb7s.mjs';
-import { $ as $$Container, a as $$Layout } from '../chunks/Layout_dxT51Zov.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, b as createAstro, a as renderComponent, d as addAttribute } from '../chunks/astro/server_J1YT_JX1.mjs';
+import { $ as $$Container, a as $$Layout } from '../chunks/Layout_Kh1ByzcD.mjs';
 import { f as formatDate } from '../chunks/utils_BW1fk8xr.mjs';
-import { g as getCollection } from '../chunks/_astro_content_Dq6f-8u0.mjs';
+import { g as getCollection } from '../chunks/_astro_content_CCpvKU5_.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$ArticleIcon = createComponent(($$result, $$props, $$slots) => {
@@ -13,7 +13,7 @@ const $$VideoIcon = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>`;
 }, "/Users/ismk/Documents/Work/isonmynetwork/src/components/Icons/VideoIcon.astro", void 0);
 
-const $$Astro$1 = createAstro();
+const $$Astro$1 = createAstro("https://isonmynetwork.github.io");
 const $$ArticleCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$ArticleCard;
@@ -23,7 +23,7 @@ Read more
 <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> </a> </div> </article>`;
 }, "/Users/ismk/Documents/Work/isonmynetwork/src/components/ArticleCard.astro", void 0);
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("https://isonmynetwork.github.io");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;

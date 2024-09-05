@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./cutting-edge-tablets_CJfrC6Y9.mjs');
+						return import('./guardian-of-the-digital-realm_BEGfyE-4.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

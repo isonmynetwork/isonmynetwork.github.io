@@ -1,4 +1,4 @@
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, e as renderSlot, a as renderComponent, d as addAttribute, b as createAstro, f as renderHead } from './astro/server_D2dAgb7s.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, e as renderSlot, a as renderComponent, d as addAttribute, b as createAstro, f as renderHead } from './astro/server_J1YT_JX1.mjs';
 /* empty css                         */
 
 const $$Container = createComponent(($$result, $$props, $$slots) => {
@@ -11,9 +11,8 @@ var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { valu
 var _a$1;
 const $$Navbar = createComponent(($$result, $$props, $$slots) => {
   const navLinks = [
-    { href: "/about", label: "About us" },
     { href: "/#services", label: "Services" },
-    { href: "/#projects", label: "Use Cases" },
+    { href: "/#process", label: "Process" },
     { href: "/pricing", label: "Pricing" }
   ];
   const navButton = { href: "https://github.com/manulthanura/Positivus", label: "Request a quote" };
@@ -45,15 +44,12 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$Astro$2 = createAstro();
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
-  Astro2.self = $$Footer;
-  return renderTemplate(_a || (_a = __template(["", '<footer class="bg-lime bg-fixed bg-bottom text-black"> ', ' </footer> <script>\n    const year = new Date().getFullYear();\n    document.getElementById("currentYear").innerHTML = `${year}`;\n<\/script>'], ["", '<footer class="bg-lime bg-fixed bg-bottom text-black"> ', ' </footer> <script>\n    const year = new Date().getFullYear();\n    document.getElementById("currentYear").innerHTML = \\`\\${year}\\`;\n<\/script>'])), maybeRenderHead(), renderComponent($$result, "Container", $$Container, {}, { "default": ($$result2) => renderTemplate` <div class="py-6"> <div class="flex flex-col items-center justify-between md:flex-row"> <div class="flex items-center space-x-3 rtl:space-x-reverse"> <img class="w-auto" src="/Logo.svg" alt="Logo"> </div> <div class="flex mt-4 md:m-0"> <div class="-mx-4">
-@ <span id="currentYear"></span> IsOnMyNet.Work | Made with <a href="https://astro.build/" target="_blank" rel="noopener noreferrer" class="underline">Astro</a></div> </div> </div> </div> ` }));
+  return renderTemplate(_a || (_a = __template(["", '<footer class="bg-lime bg-fixed bg-bottom text-black"> ', ' </footer> <script>\n    const year = new Date().getFullYear();\n    document.getElementById("currentYear").innerHTML = `${year}`;\n<\/script>'], ["", '<footer class="bg-lime bg-fixed bg-bottom text-black"> ', ' </footer> <script>\n    const year = new Date().getFullYear();\n    document.getElementById("currentYear").innerHTML = \\`\\${year}\\`;\n<\/script>'])), maybeRenderHead(), renderComponent($$result, "Container", $$Container, {}, { "default": ($$result2) => renderTemplate` <div class="py-6"> <div class="flex flex-col items-center justify-between md:flex-row"> <div class="flex items-center rtl:space-x-reverse"> <img src="./isonmynet-logo.png" alt="" class="h-12"> <span class="font-bold text-3xl text-slate-800">IsOnMyNet</span><span class="text-3xl text-slate-500">.work</span> </div> <div class="flex mt-4 md:m-0"> <div class="-mx-4">
+@ <span id="currentYear"></span> IsOnMyNet.Work | Made with <span class="text-xl">❤️</span> in <span class="text-3xl">🇦🇪</span></div> </div> </div> </div> ` }));
 }, "/Users/ismk/Documents/Work/isonmynetwork/src/components/Footer.astro", void 0);
 
-const $$Astro$1 = createAstro();
+const $$Astro$1 = createAstro("https://isonmynetwork.github.io");
 const $$ViewTransitions = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$ViewTransitions;
@@ -61,7 +57,7 @@ const $$ViewTransitions = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`<meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback"${addAttribute(fallback, "content")}>`;
 }, "/Users/ismk/Documents/Work/isonmynetwork/node_modules/.pnpm/astro@4.15.3_typescript@5.5.4/node_modules/astro/components/ViewTransitions.astro", void 0);
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("https://isonmynetwork.github.io");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;

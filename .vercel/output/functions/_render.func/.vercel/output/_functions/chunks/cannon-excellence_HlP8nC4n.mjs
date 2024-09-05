@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./How to quickly deploy a static website_1SE9bHUG.mjs');
+						return import('./cannon-excellence_C4p7Pego.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

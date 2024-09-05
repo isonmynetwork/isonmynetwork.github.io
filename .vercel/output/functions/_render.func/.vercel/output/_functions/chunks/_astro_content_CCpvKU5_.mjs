@@ -1,5 +1,5 @@
 import { r as removeBase, i as isRemotePath, V as VALID_INPUT_FORMATS, A as AstroError, U as UnknownContentCollectionError, p as prependForwardSlash } from './astro/assets-service_pkTuGmSk.mjs';
-import { c as createComponent, i as renderUniqueStylesheet, j as renderScriptElement, k as createHeadAndContent, r as renderTemplate, a as renderComponent, u as unescapeHTML } from './astro/server_D2dAgb7s.mjs';
+import { c as createComponent, i as renderUniqueStylesheet, j as renderScriptElement, k as createHeadAndContent, r as renderTemplate, a as renderComponent, u as unescapeHTML } from './astro/server_J1YT_JX1.mjs';
 import { u as unflatten } from './parse_D_DrAez1.mjs';
 
 // src/modern.ts
@@ -591,7 +591,7 @@ function dataStoreSingleton() {
 }
 const globalDataStore = dataStoreSingleton();
 
-const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": true, "MODE": "production", "PROD": false, "SITE": undefined, "SSR": true};
+const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": true, "MODE": "production", "PROD": false, "SITE": "https://isonmynetwork.github.io", "SSR": true};
 function createCollectionToGlobResultMap({
   globResult,
   contentDir
@@ -870,7 +870,7 @@ const collectionToEntryMap = createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"how-to-quickly-deploy-a-static-website":"/src/content/blog/How to quickly deploy a static website.md","capturing-lifes-moments-with-canon-excellence":"/src/content/blog/cannon-excellence.md","elevate-your-mobile-experience-with-samsung":"/src/content/blog/elevate-your-mobile-experience.md","unleash-creativity-with-these-cutting-edge-tablets":"/src/content/blog/cutting-edge-tablets.md","guardian-of-the-digital-realm-web-security":"/src/content/blog/guardian-of-the-digital-realm.md"}}};
+lookupMap = {"blog":{"type":"content","entries":{"how-to-quickly-deploy-a-static-website":"/src/content/blog/How to quickly deploy a static website.md","unleash-creativity-with-these-cutting-edge-tablets":"/src/content/blog/cutting-edge-tablets.md","capturing-lifes-moments-with-canon-excellence":"/src/content/blog/cannon-excellence.md","elevate-your-mobile-experience-with-samsung":"/src/content/blog/elevate-your-mobile-experience.md","guardian-of-the-digital-realm-web-security":"/src/content/blog/guardian-of-the-digital-realm.md"}}};
 
 const collectionNames = new Set(Object.keys(lookupMap));
 
@@ -883,7 +883,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/How to quickly deploy a static website.md": () => import('./How to quickly deploy a static website_D2mTAzho.mjs'),"/src/content/blog/cannon-excellence.md": () => import('./cannon-excellence_g6wmiVo-.mjs'),"/src/content/blog/cutting-edge-tablets.md": () => import('./cutting-edge-tablets_CbgjWnRl.mjs'),"/src/content/blog/elevate-your-mobile-experience.md": () => import('./elevate-your-mobile-experience_C7WTHgN6.mjs'),"/src/content/blog/guardian-of-the-digital-realm.md": () => import('./guardian-of-the-digital-realm_CfxqvW07.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/How to quickly deploy a static website.md": () => import('./How to quickly deploy a static website_9BxClnBJ.mjs'),"/src/content/blog/cannon-excellence.md": () => import('./cannon-excellence_HlP8nC4n.mjs'),"/src/content/blog/cutting-edge-tablets.md": () => import('./cutting-edge-tablets_-OuTV5kQ.mjs'),"/src/content/blog/elevate-your-mobile-experience.md": () => import('./elevate-your-mobile-experience_BgqmHeWD.mjs'),"/src/content/blog/guardian-of-the-digital-realm.md": () => import('./guardian-of-the-digital-realm_BaYW6oWV.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,

@@ -1,11 +1,11 @@
 /* empty css                                    */
-import { c as createComponent, r as renderTemplate, a as renderComponent, b as createAstro, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_D2dAgb7s.mjs';
-import { $ as $$Container, a as $$Layout } from '../../chunks/Layout_dxT51Zov.mjs';
-import { a as getEntry } from '../../chunks/_astro_content_Dq6f-8u0.mjs';
+import { b as createAstro, c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_J1YT_JX1.mjs';
+import { $ as $$Container, a as $$Layout } from '../../chunks/Layout_Kh1ByzcD.mjs';
+import { a as getEntry } from '../../chunks/_astro_content_CCpvKU5_.mjs';
 import { f as formatDate } from '../../chunks/utils_BW1fk8xr.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("https://isonmynetwork.github.io");
 const $$ = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$;

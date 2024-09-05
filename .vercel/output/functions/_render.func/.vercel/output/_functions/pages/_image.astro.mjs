@@ -1,5 +1,5 @@
 import { A as AstroError, f as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, g as ExpectedImageOptions, h as ExpectedImage, j as ExpectedNotESMImage, k as resolveSrc, l as isRemoteImage, m as isESMImportedImage, n as isLocalService, D as DEFAULT_HASH_PROPS, o as InvalidImageService, q as ImageMissingAlt, i as isRemotePath, s as isRemoteAllowed } from '../chunks/astro/assets-service_pkTuGmSk.mjs';
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, s as spreadAttributes, b as createAstro } from '../chunks/astro/server_D2dAgb7s.mjs';
+import { b as createAstro, c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, s as spreadAttributes } from '../chunks/astro/server_J1YT_JX1.mjs';
 export { renderers } from '../renderers.mjs';
 
 function isImageMetadata(src) {
@@ -926,7 +926,7 @@ async function getImage$1(options, imageConfig) {
   };
 }
 
-const $$Astro$1 = createAstro();
+const $$Astro$1 = createAstro("https://isonmynetwork.github.io");
 const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Image;
@@ -1394,7 +1394,7 @@ function lookup(extn) {
 	return mimes[!~idx ? tmp : tmp.substring(++idx)];
 }
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("https://isonmynetwork.github.io");
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Picture;

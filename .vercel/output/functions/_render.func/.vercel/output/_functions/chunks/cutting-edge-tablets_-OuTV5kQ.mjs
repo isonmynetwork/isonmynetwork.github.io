@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./elevate-your-mobile-experience_1WXXsngU.mjs');
+						return import('./cutting-edge-tablets_Cm5dDIdW.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

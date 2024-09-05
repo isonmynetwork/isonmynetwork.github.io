@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./guardian-of-the-digital-realm_TbULF_DV.mjs');
+						return import('./elevate-your-mobile-experience_D_k5pwUZ.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

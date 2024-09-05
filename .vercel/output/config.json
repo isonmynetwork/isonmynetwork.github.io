@@ -36,6 +36,14 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^\\/home-office\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/home-users\\/?$",
+			"dest": "_render"
+		},
+		{
 			"src": "^\\/pricing\\/?$",
 			"dest": "_render"
 		},
