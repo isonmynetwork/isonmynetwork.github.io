@@ -5,7 +5,7 @@ import servicesData from './Data/services.json';
 ---
 <Container>
 <div class="relative flex flex-col items-center md:flex-row" id="services">
-    <Topic title="Our Services" description="Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation">
+    <Topic title="Our Services" description="At isonmynet.work, we believe IT solutions should be personalized, long-term, and adaptable. Through a subscription model, our 6-month minimum contracts guarantee continuous support as your needs evolve, ensuring you’re never without expert guidance.">
 </div>
 
 <div class="flex-row items-center py-5">
@@ -13,7 +13,7 @@ import servicesData from './Data/services.json';
 
         <!-- card start-->
         {
-        servicesData.map(({ background, name1, name2, arrow, link, image} ) => (
+        servicesData.map(({ background, name1, description, arrow, link, image} ) => (
         <div class={background}>
             <div class="flex-col justify-center items-start gap-[93px] inline-flex">
                 <div class="flex-col justify-start items-start flex">
@@ -21,7 +21,7 @@ import servicesData from './Data/services.json';
                         <div class=" text-3xl font-medium">{name1}</div>
                     </div>
                     <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
-                        <div class="text-3xl font-medium">{name2}</div>
+                        <div class="text-3sm font-medium">{description}</div>
                     </div>
                 </div>
                 <a class="justify-start items-center gap-[15px] inline-flex" href={link}>
@@ -46,7 +46,7 @@ import servicesData from './Data/services.json';
         <div class="justify-start items-center gap-[275px] flex">
             <div class="flex-col justify-start items-start gap-[26px] inline-flex text-black">
                 <div class="text-3xl font-medium">Let’s make things happen</div>
-                <div class="text-lg font-normal">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</div>
+                <div class="text-lg font-normal">Contact us today to learn more about how our IT services can help you and your business grow</div>
                 <a href="/" class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-[14px] justify-start items-start gap-2.5 inline-flex">
                     <div class="text-center text-xl font-normal leading-7">Get your free proposal</div>
                 </a>
