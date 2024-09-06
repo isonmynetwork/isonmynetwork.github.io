@@ -21,7 +21,7 @@
     "id": 3,
     "name1": "Home Users",
     "description": "Scalable server setups & virtualization Docker & VPN configuration Data backup and recovery solutions",
-    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "background": "h-[310px] p-12 bg-stone rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/aw.svg",
     "link": "./home-users",
     "image": "./services/03.svg"

@@ -2,30 +2,40 @@
 import Container from "./Container.astro"
 import Topic from "./Topic.astro";
 ---
+
 <Container>
 <div class="relative flex flex-col items-center md:flex-row">
     <Topic title="Contact" description="Connect with Us: Let's Discuss Your Digital Marketing Needs" />
 </div>
 
-<div class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]">
+<div id="contact" class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]">
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
         <form action="#" class="space-y-8 md:w-full">
             <div class="flex">
                 <div class="flex items-center me-4">
-                    <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
-                    <label for="inline-radio" class="ms-2 text-base font-medium text-black">Say Hi</label>
+                    <input id="say-hi" type="radio" value="say-hi" name="contact-type" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
+                    <label for="say-hi" class="ms-2 text-base font-medium text-black">Say Hi</label>
                 </div>
                 <div class="flex items-center me-4 mx-8 md:mx-20">
-                    <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
-                    <label for="inline-2-radio" class="ms-2 text-base font-medium text-black">Get a Quote</label>
+                    <input id="get-quote" type="radio" value="get-quote" name="contact-type" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
+                    <label for="get-quote" class="ms-2 text-base font-medium text-black">Get a Quote</label>
                 </div>
             </div>
-            <div>
-                <label for="email" class="block mb-2 text-base font-medium text-black">Name</label>
-                <input type="text" id="subject" class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black" placeholder="Name" required>
+            <div id="quote-type-container" class="hidden">
+                <label for="quote-type" class="block mb-2 text-base font-medium text-black">Type of Business</label>
+                <select id="quote-type" class="block w-full p-3 text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black">
+                    <option selected>Choose a type</option>
+                    <option value="sme">Small and Medium Enterprises</option>
+                    <option value="home-office">Home Offices</option>
+                    <option value="home-user">Home Users</option>
+                </select>
             </div>
             <div>
-                <label for="subject" class="block mb-2 text-base font-medium text-black">Email</label>
+                <label for="name" class="block mb-2 text-base font-medium text-black">Name</label>
+                <input type="text" id="name" class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black" placeholder="Name" required>
+            </div>
+            <div>
+                <label for="email" class="block mb-2 text-base font-medium text-black">Email</label>
                 <input type="email" id="email" class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Email" required>
             </div>
             <div class="sm:col-span-2">
@@ -42,3 +52,18 @@ import Topic from "./Topic.astro";
     </div>
 </div>
 </Container>
+
+<script>
+    const contactTypeRadios = document.querySelectorAll('input[name="contact-type"]');
+    const quoteTypeContainer = document.getElementById('quote-type-container');
+
+    contactTypeRadios.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            if (event.target.value === 'get-quote') {
+                quoteTypeContainer.classList.remove('hidden');
+            } else {
+                quoteTypeContainer.classList.add('hidden');
+            }
+        });
+    });
+</script>
