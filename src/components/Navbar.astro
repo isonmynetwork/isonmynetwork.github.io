@@ -48,24 +48,32 @@ import Container from "./Container.astro"
 </header>
 
 <script is:inline>
-document.addEventListener('DOMContentLoaded', () => {
-  const navbar = document.getElementById('navbar-default');
-
-  // Check if navbar exists before adding event listeners
-  if (navbar) {
+  function setupNavbar() {
+    console.log("Setting up navbar");
+    const navbar = document.getElementById('navbar-default');
     const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
     const navLinks = navbar.querySelectorAll('a');
 
-    if (toggleButton) {
-      toggleButton.addEventListener('click', () => navbar.classList.toggle('hidden'));
+    if (navbar && toggleButton) {
+      toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('hidden');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 768) {  // Only on mobile
+            navbar.classList.add('hidden');
+          }
+        });
+      });
     } else {
-      console.warn("Navbar toggle button not found. Toggle functionality might be affected.");
+      console.warn("Navbar or toggle button not found");
     }
-
-    navLinks.forEach(link => link.addEventListener('click', () => navbar.classList.add('hidden')));
-  } else {
-    console.warn("Navbar element with ID 'navbar-default' not found. Navigation functionality might be affected.");
   }
-});
 
+  // Run on initial load
+  document.addEventListener('DOMContentLoaded', setupNavbar);
+
+  // Run on each navigation
+  document.addEventListener('astro:after-swap', setupNavbar);
 </script>

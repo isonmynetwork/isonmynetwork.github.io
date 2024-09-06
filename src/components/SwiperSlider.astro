@@ -85,6 +85,7 @@ const slides = [
     </div>
   </div>
 </div>
+
 <script>
   import "swiper/css";
   import "swiper/css/pagination";
@@ -93,35 +94,44 @@ const slides = [
   import { register } from "swiper/element/bundle";
   register();
 
-  Swiper.use([Pagination, Navigation]);
+  function initSwiper() {
+    Swiper.use([Pagination, Navigation]);
 
-  new Swiper("#ProjectSlider", {
-    modules: [Pagination, Navigation],
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    loop: true,
-    autoplay: false,
-    grabCursor: false,
-    mousewheel: false,
-    slidesPerView: 2,
-    centeredSlides: true,
-    spaceBetween: 50,
-    breakpoints: {
-      1024: {
-        slidesPerView: 2,
+    new Swiper("#ProjectSlider", {
+      modules: [Pagination, Navigation],
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-      320: {
-        slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-    },
-  });
+      loop: true,
+      autoplay: false,
+      grabCursor: false,
+      mousewheel: false,
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 50,
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      },
+    });
+  }
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', initSwiper);
+
+  // Re-initialize after Astro page transitions
+  document.addEventListener('astro:page-load', initSwiper);
 </script>
+
 <style>
   .bubble {
     position: relative;
