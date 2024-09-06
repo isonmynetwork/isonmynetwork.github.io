@@ -10,7 +10,7 @@ import Topic from "./Topic.astro";
 
 <div id="contact" class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]">
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
-        <form action="#" class="space-y-8 md:w-full">
+        <form action="https://submit-form.com/4VMJnJ8Kz" class="space-y-8 md:w-full">
             <div class="flex">
                 <div class="flex items-center me-4">
                     <input id="say-hi" type="radio" value="say-hi" name="contact-type" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
@@ -30,21 +30,23 @@ import Topic from "./Topic.astro";
                     <option value="home-user">Home Users</option>
                 </select>
             </div>
+            <input type="hidden" id="selected-option" name="selected-option" value="">
             <div>
                 <label for="name" class="block mb-2 text-base font-medium text-black">Name</label>
-                <input type="text" id="name" class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black" placeholder="Name" required>
+                <input type="text" id="name" name="name" class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black" placeholder="Name" required>
             </div>
             <div>
                 <label for="email" class="block mb-2 text-base font-medium text-black">Email</label>
-                <input type="email" id="email" class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Email" required>
+                <input type="email" id="email" name="email"class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Email" required>
             </div>
             <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-base font-medium text-black dark:text-gray-400">Message</label>
-                <textarea id="message" rows="6" class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black" placeholder="Message"></textarea>
+                <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black" placeholder="Message"></textarea>
             </div>
             <button type="submit" class="w-full py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex">
                 <div class="text-center text-white text-xl font-normal leading-7">Send Message</div>
             </button>
+            <input type="hidden" name="_redirect" value="https://isonmynet.work" />
         </form>
     </div>
     <div class="hidden md:grid md:justify-items-end md:w-4/12 md:py-2">
@@ -54,20 +56,43 @@ import Topic from "./Topic.astro";
 </Container>
 
 <script>
-    const contactTypeRadios = document.querySelectorAll('input[name="contact-type"]');
-    const quoteTypeContainer = document.getElementById('quote-type-container');
+    type ContactType = 'say-hi' | 'get-quote';
+    type QuoteType = 'sme' | 'home-office' | 'home-user' | '';
 
-    if (quoteTypeContainer) {
+    const contactTypeRadios = document.querySelectorAll<HTMLInputElement>('input[name="contact-type"]');
+    const quoteTypeContainer = document.getElementById('quote-type-container');
+    const quoteTypeSelect = document.getElementById('quote-type') as HTMLSelectElement | null;
+    const selectedOptionInput = document.getElementById('selected-option') as HTMLInputElement | null;
+
+    function handleContactTypeChange(event: Event) {
+        const target = event.target as HTMLInputElement;
+        const contactType: ContactType = target.value as ContactType;
+
+        if (quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
+            if (contactType === 'get-quote') {
+                quoteTypeContainer.classList.remove('hidden');
+            } else {
+                quoteTypeContainer.classList.add('hidden');
+                quoteTypeSelect.value = '';
+                selectedOptionInput.value = '';
+            }
+        }
+    }
+
+    function handleQuoteTypeChange(event: Event) {
+        const target = event.target as HTMLSelectElement;
+        const quoteType: QuoteType = target.value as QuoteType;
+
+        if (selectedOptionInput) {
+            selectedOptionInput.value = quoteType;
+        }
+    }
+
+    if (quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
         contactTypeRadios.forEach(radio => {
-            radio.addEventListener('change', (event) => {
-                if (event.target instanceof HTMLInputElement) {
-                    if (event.target.value === 'get-quote') {
-                        quoteTypeContainer.classList.remove('hidden');
-                    } else {
-                        quoteTypeContainer.classList.add('hidden');
-                    }
-                }
-            });
+            radio.addEventListener('change', handleContactTypeChange);
         });
+
+        quoteTypeSelect.addEventListener('change', handleQuoteTypeChange);
     }
 </script>
