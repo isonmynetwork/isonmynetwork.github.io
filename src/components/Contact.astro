@@ -10,7 +10,7 @@ import Topic from "./Topic.astro";
 
 <div id="contact" class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]">
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
-        <form action="https://submit-form.com/4VMJnJ8Kz" class="space-y-8 md:w-full">
+        <form id="contact-form" action="https://submit-form.com/4VMJnJ8Kz" class="space-y-8 md:w-full">
             <div class="flex">
                 <div class="flex items-center me-4">
                     <input id="say-hi" type="radio" value="say-hi" name="contact-type" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
@@ -23,8 +23,8 @@ import Topic from "./Topic.astro";
             </div>
             <div id="quote-type-container" class="hidden">
                 <label for="quote-type" class="block mb-2 text-base font-medium text-black">Type of Business</label>
-                <select id="quote-type" class="block w-full p-3 text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black">
-                    <option selected>Choose a type</option>
+                <select id="quote-type" name="quote-type" class="block w-full p-3 text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black">
+                    <option value="">Choose a type</option>
                     <option value="sme">Small and Medium Enterprises</option>
                     <option value="home-office">Home Offices</option>
                     <option value="home-user">Home Users</option>
@@ -37,7 +37,7 @@ import Topic from "./Topic.astro";
             </div>
             <div>
                 <label for="email" class="block mb-2 text-base font-medium text-black">Email</label>
-                <input type="email" id="email" name="email"class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Email" required>
+                <input type="email" id="email" name="email" class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Email" required>
             </div>
             <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-base font-medium text-black dark:text-gray-400">Message</label>
@@ -59,6 +59,7 @@ import Topic from "./Topic.astro";
     type ContactType = 'say-hi' | 'get-quote';
     type QuoteType = 'sme' | 'home-office' | 'home-user' | '';
 
+    const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
     const contactTypeRadios = document.querySelectorAll<HTMLInputElement>('input[name="contact-type"]');
     const quoteTypeContainer = document.getElementById('quote-type-container');
     const quoteTypeSelect = document.getElementById('quote-type') as HTMLSelectElement | null;
@@ -88,11 +89,19 @@ import Topic from "./Topic.astro";
         }
     }
 
-    if (quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
+    function handleFormSubmit(event: Event) {
+        // Remove event.preventDefault() to allow the form to submit
+        alert("Thanks! We'll be in touch soon.");
+        // The form will submit to the URL specified in the action attribute
+    }
+
+    if (contactForm && quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
         contactTypeRadios.forEach(radio => {
             radio.addEventListener('change', handleContactTypeChange);
         });
 
         quoteTypeSelect.addEventListener('change', handleQuoteTypeChange);
+
+        contactForm.addEventListener('submit', handleFormSubmit);
     }
 </script>
