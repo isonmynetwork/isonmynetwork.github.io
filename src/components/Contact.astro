@@ -57,13 +57,17 @@ import Topic from "./Topic.astro";
     const contactTypeRadios = document.querySelectorAll('input[name="contact-type"]');
     const quoteTypeContainer = document.getElementById('quote-type-container');
 
-    contactTypeRadios.forEach(radio => {
-        radio.addEventListener('change', (event) => {
-            if (event.target.value === 'get-quote') {
-                quoteTypeContainer.classList.remove('hidden');
-            } else {
-                quoteTypeContainer.classList.add('hidden');
-            }
+    if (quoteTypeContainer) {
+        contactTypeRadios.forEach(radio => {
+            radio.addEventListener('change', (event) => {
+                if (event.target instanceof HTMLInputElement) {
+                    if (event.target.value === 'get-quote') {
+                        quoteTypeContainer.classList.remove('hidden');
+                    } else {
+                        quoteTypeContainer.classList.add('hidden');
+                    }
+                }
+            });
         });
-    });
+    }
 </script>
