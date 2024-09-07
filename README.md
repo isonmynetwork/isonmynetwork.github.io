@@ -1,4 +1,4 @@
-# IsOnMyNet.Work - Digital Marketing Agency Landing Page
+# IsOnMyNet.Work - IT Services Landing Page
 
 Introducing "IsOnMyNet.Work" - a stunning and versatile Astro theme designed for digital marketing agencies.
 
