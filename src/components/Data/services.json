@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name1": "Small and Medium Enterprises",
-    "description": "Scalable server setups & virtualization Docker & VPN configuration Data backup and recovery solutions",
+    "description": "Scalable server setups & virtualization, Docker & VPN configuration, Data backup and recovery solutions",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./sme",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name1": "Home Offices",
-    "description": "Scalable server setups & virtualization Docker & VPN configuration Data backup and recovery solutions",
+    "description": "IT services to enhance your work-from-home productivity with secure remote access, data backup & recovery, virtualization, and ongoing IT support.",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./home-office",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name1": "Home Users",
-    "description": "Scalable server setups & virtualization Docker & VPN configuration Data backup and recovery solutions",
+    "description": "Enhance your digital life with media server & NAS setup, parental controls, secure remote access, and personalized media management.",
     "background": "h-[310px] p-12 bg-stone rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./home-users",
