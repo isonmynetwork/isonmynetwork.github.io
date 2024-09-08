@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name1": "Home Offices",
-    "description": "IT services to enhance your work-from-home productivity with secure remote access, data backup & recovery, virtualization, and ongoing IT support.",
+    "description": "Boost your work-from-home productivity with secure remote access, data backup & recovery, virtualization, and ongoing IT support.",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./home-office",
