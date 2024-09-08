@@ -24,11 +24,11 @@ import Container from "./Container.astro"
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+      <div class="hidden w-full md:block md:w-auto bg-gray p-2 rounded-full shadow-md" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:mt-0 md:border-0">
             {navLinks.map(link => (
             <li>
-                <a href={link.href} class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0">{link.label}</a>
+                <a href={link.href} class="block py-2 px-8 text-white rounded md:bg-transparent hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">{link.label}</a>
             </li>
             ))}
             <li>
