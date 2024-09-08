@@ -29,8 +29,8 @@
       "Secure remote access & data sync",
       "Virtualization for enhanced productivity",
       "Comprehensive ongoing IT support",
-      "Premium support: 12 months",
-      "Free updates: 12 months"
+      "Premium support: 6 months",
+      "Free updates: 6 months"
     ]
   },
   {
@@ -52,7 +52,7 @@
   },
   {
     "id": 4,
-    "name1": "For Parental Controls Over Your Network",
+    "name1": "For Parental Controls",
     "description": "Ultimate security for your family",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
@@ -60,9 +60,9 @@
     "badge_text": "One Time Setup Fee",
     "image": "./services/04.svg",
     "list": [
-      "Customizable parental controls",
-      "Secure access for all devices",
-      "Advanced network security",
+      "State-of-the-art control hardware included",
+      "Customizable User-friendly management software provided",
+      "Advanced network security for all devices",
       "Premium support: 6 months",
       "One time setup fee"
     ]
