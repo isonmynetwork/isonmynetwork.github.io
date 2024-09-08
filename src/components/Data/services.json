@@ -26,13 +26,4 @@
     "link": "./home-users",
     "image": "./services/03.svg"
   }
-// {
-//    "id": 4,
-//    "name1": "Parental Controls",
-//    "description": "Empowering Safe Online Experiences with Tailored Parental Controls",
-//    "background": "h-[310px] p-12 bg-stone rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-//    "arrow": "./services/ag.svg",
-//    "link": "./parental-controls",
-//    "image": "./services/04.svg"
-//  }  
 ]
