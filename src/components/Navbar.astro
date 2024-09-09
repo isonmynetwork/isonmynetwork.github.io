@@ -1,50 +1,60 @@
 ---
 // Define your navigation links here
 const navLinks = [
-  { href: '/#services', label: 'Services' },
-  { href: '/#process', label: 'Process' },
-  { href: '/packages', label: 'Packages' },
+{ href: '/#services', label: 'Services' },
+{ href: '/#process', label: 'Process' },
+{ href: '/packages', label: 'Packages' },
 ];
 
-const navButton = { href: '/#contact', label: 'Request a quote' };
+const reqButton = { href: '/#contact', label: 'Request a quote' };
 
 import Container from "./Container.astro"
 ---
 
 <header class="mt-20">
-<nav class="w-full top-0 left-0 z-50 fixed bg-white">
-  <Container>
-    <div class="flex flex-wrap items-center justify-between mx-auto py-3">
-      <a href="/" class="flex items-center rtl:space-x-reverse">
-        <img src="./isonmynet-logo.png" alt="" class="h-12"> <span class="font-bold text-3xl text-slate-800">IsOnMyNet</span><span class="text-3xl text-slate-500">.work</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 " aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+  <nav class="w-full top-0 left-0 z-50 fixed bg-white">
+    <Container>
+      <div class="flex flex-wrap items-center justify-between mx-auto py-3">
+        <div class="flex flex-wrap items-center justify-between py-3 bg-zinc-900 rounded-full">
+
+          <!-- Logo -->
+          <div class="flex flex-wrap items-center justify-between mx-4 py-3 bg-white p-4 rounded-full">
+            <a href="/" class="flex items-center rtl:space-x-reverse">
+              <img src="./isonmynet-logo.png" alt="" class="h-12"> <span class="font-bold text-3xl text-slate-800">IsOnMyNet</span><span class="text-3xl text-slate-500">.work</span>
+            </a>
+          </div>
+          <!-- End Logo -->
+
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 " aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto bg-gray p-2 rounded-full shadow-md" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:mt-0 md:border-0">
-            {navLinks.map(link => (
-            <li>
-                <a href={link.href} class="block py-2 px-8 text-white rounded md:bg-transparent hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">{link.label}</a>
-            </li>
-            ))}
-            <li>
-                <a class="md:hidden px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href} target="_blank">
-                  <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto bg-zinc-900 p-2 rounded-full shadow-md" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:mt-0 md:border-0">
+              {navLinks.map(link => (
+              <li>
+                <a href={link.href} class="block text-xl py-2 px-8 text-white rounded md:bg-transparent hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">{link.label}</a>
+              </li>
+              ))}
+              <li>
+                <a class="md:hidden px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={reqButton.href} target="_blank">
+                  <h2 class="text-center text-xl font-normal leading-7">{reqButton.label}</h2>
                 </a>
-            </li>
-        </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Request a quote button -->
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-zinc-900 text-black inline-flex hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110" href={reqButton.href} target="_blank"><h2 class="text-center text-xl font-normal leading-7">{reqButton.label}</h2>
+            </a>
+          </div>
+          <!-- End Request a quote button -->
       </div>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href} target="_blank"><h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
-        </a>
-      </div>
-    </div>
-  </Container>
-</nav>
+    </Container>
+  </nav>
 </header>
 
 <script is:inline>
