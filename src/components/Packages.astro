@@ -14,7 +14,10 @@ import Accordion from "./Accordion.astro";
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
       { packagesData.map(({ background, name1, description, arrow, link, badge_text, image, list}) => (
       <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-3xl border border-gray-100 shadow-card ">
-        <div class="bg-zinc-900 text-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg rounded-full sm:px-10 bg-yellow-300 text-sm font-bold py-4 px-4 shadow-lg mb-4">
+        <div class="flex justify-center text-black shadow-xl ring-1 ring-black rounded-full text-sm font-bold py-2 shadow-lg mb-4">
+          <svg class="relative top-[1px] mr-2 w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+          </svg>
           {badge_text}
         </div>
         <h3 class="mb-4 text-2xl font-semibold">{name1}</h3>

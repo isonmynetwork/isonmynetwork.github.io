@@ -17,7 +17,10 @@ import servicesData from './Data/services.json';
         <div class={`${background} relative overflow-hidden`}>
             <!-- Styled Subscription badge -->
             <div class="flex-col justify-center items-start lg:gap-[93px] gap-[20px] inline-flex">
-              <div class="bg-zinc-900 text-white shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg rounded-full sm:px-10 lg:absolute top-6 right-6 bg-yellow-300 text-sm font-bold py-4 px-4 shadow-lg">
+              <div class="flex justify-center items-start ring-2 ring-black rounded-full p-2 text-black lg:absolute top-6 right-6 text-sm lg:text-lg font-bold drop-shadow-md bg-white shadow-inner">
+                <svg class="relative top-[4px] mr-2 w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
                 {badge_text}
               </div>
                 <div class="flex-col justify-start items-start flex">
@@ -51,7 +54,7 @@ import servicesData from './Data/services.json';
             <div class="flex-col justify-start items-start gap-[26px] inline-flex text-black">
                 <div class="text-3xl font-medium">Let's make things happen</div>
                 <div class="text-lg font-normal">Contact us today to learn more about how our IT services can help you and your business grow</div>
-                <a href="/#contact" class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-[14px] justify-start items-start gap-2.5 inline-flex">
+                <a href="/#contact" class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-full justify-start items-start gap-2.5 inline-flex">
                     <div class="text-center text-xl font-normal leading-7">Get your free proposal</div>
                 </a>
             </div>
