@@ -17,7 +17,7 @@
     "arrow": "./services/ag.svg",
     "link": "./home-office",
     "badge_text": "Monthly Subscription",
-    "image": "./services/02.svg"
+    "image": "./services/04.svg"
   },
   {
     "id": 3,
@@ -37,6 +37,6 @@
     "arrow": "./services/ag.svg",
     "link": "./parental-controls",
     "badge_text": "One Time Setup Fee",
-    "image": "./services/04.svg"
+    "image": "./services/02.svg"
   }  
 ]
