@@ -61,6 +61,13 @@ import Topic from "./Topic.astro";
     const $recaptcha = document.querySelector('#g-recaptcha-response');
     if ($recaptcha) {
       $recaptcha.setAttribute('required', 'required');
+      $recaptcha.style.display = 'block';
+      $recaptcha.style.position = 'absolute';
+      $recaptcha.style.margin = '-78px 0 0 0';
+      $recaptcha.style.width = '302px';
+      $recaptcha.style.height = '76px';
+      $recaptcha.style.zIndex = '-999999';
+      $recaptcha.style.opacity = '0';
     }
   })
 
