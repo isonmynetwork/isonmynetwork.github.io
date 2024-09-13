@@ -57,52 +57,59 @@ import Topic from "./Topic.astro";
 </Container>
 
 <script>
-    type ContactType = 'say-hi' | 'get-quote';
-    type QuoteType = 'sme' | 'home-office' | 'home-user' | '';
-
-    const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
-    const contactTypeRadios = document.querySelectorAll<HTMLInputElement>('input[name="contact-type"]');
-    const quoteTypeContainer = document.getElementById('quote-type-container');
-    const quoteTypeSelect = document.getElementById('quote-type') as HTMLSelectElement | null;
-    const selectedOptionInput = document.getElementById('selected-option') as HTMLInputElement | null;
-
-    function handleContactTypeChange(event: Event) {
-        const target = event.target as HTMLInputElement;
-        const contactType: ContactType = target.value as ContactType;
-
-        if (quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
-            if (contactType === 'get-quote') {
-                quoteTypeContainer.classList.remove('hidden');
-            } else {
-                quoteTypeContainer.classList.add('hidden');
-                quoteTypeSelect.value = '';
-                selectedOptionInput.value = '';
-            }
-        }
+  window.addEventListener('load', () => {
+    const $recaptcha = document.querySelector('#g-recaptcha-response');
+    if ($recaptcha) {
+      $recaptcha.setAttribute('required', 'required');
     }
+  })
 
-    function handleQuoteTypeChange(event: Event) {
-        const target = event.target as HTMLSelectElement;
-        const quoteType: QuoteType = target.value as QuoteType;
+  type ContactType = 'say-hi' | 'get-quote';
+  type QuoteType = 'sme' | 'home-office' | 'home-user' | '';
 
-        if (selectedOptionInput) {
-            selectedOptionInput.value = quoteType;
-        }
+  const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
+  const contactTypeRadios = document.querySelectorAll<HTMLInputElement>('input[name="contact-type"]');
+  const quoteTypeContainer = document.getElementById('quote-type-container');
+  const quoteTypeSelect = document.getElementById('quote-type') as HTMLSelectElement | null;
+  const selectedOptionInput = document.getElementById('selected-option') as HTMLInputElement | null;
+
+  function handleContactTypeChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    const contactType: ContactType = target.value as ContactType;
+
+    if (quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
+      if (contactType === 'get-quote') {
+        quoteTypeContainer.classList.remove('hidden');
+      } else {
+        quoteTypeContainer.classList.add('hidden');
+        quoteTypeSelect.value = '';
+        selectedOptionInput.value = '';
+      }
     }
+  }
 
-    function handleFormSubmit(event: Event) {
-        // Remove event.preventDefault() to allow the form to submit
-        alert("Thanks! We'll be in touch soon.");
-        // The form will submit to the URL specified in the action attribute
+  function handleQuoteTypeChange(event: Event) {
+    const target = event.target as HTMLSelectElement;
+    const quoteType: QuoteType = target.value as QuoteType;
+
+    if (selectedOptionInput) {
+      selectedOptionInput.value = quoteType;
     }
+  }
 
-    if (contactForm && quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
-        contactTypeRadios.forEach(radio => {
-            radio.addEventListener('change', handleContactTypeChange);
-        });
+  function handleFormSubmit(event: Event) {
+    // Remove event.preventDefault() to allow the form to submit
+    alert("Thanks! We'll be in touch soon.");
+    // The form will submit to the URL specified in the action attribute
+  }
 
-        quoteTypeSelect.addEventListener('change', handleQuoteTypeChange);
+  if (contactForm && quoteTypeContainer && quoteTypeSelect && selectedOptionInput) {
+    contactTypeRadios.forEach(radio => {
+      radio.addEventListener('change', handleContactTypeChange);
+    });
 
-        contactForm.addEventListener('submit', handleFormSubmit);
-    }
+    quoteTypeSelect.addEventListener('change', handleQuoteTypeChange);
+
+    contactForm.addEventListener('submit', handleFormSubmit);
+  }
 </script>
