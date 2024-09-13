@@ -58,7 +58,7 @@ import Topic from "./Topic.astro";
 
 <script>
   window.addEventListener('load', () => {
-    const $recaptcha = document.querySelector('#g-recaptcha-response');
+    const $recaptcha = document.querySelector('#g-recaptcha-response') as HTMLElement;
     if ($recaptcha) {
       $recaptcha.setAttribute('required', 'required');
       $recaptcha.style.display = 'block';
