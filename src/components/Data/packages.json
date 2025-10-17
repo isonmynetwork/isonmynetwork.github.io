@@ -54,7 +54,7 @@
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./parental-controls",
-    "badge_text": "",
+    "badge_text": "Monthly Subscription",
     "image": "./services/04.svg",
     "list": [
       "State-of-the-art control hardware included",
