@@ -131,13 +131,12 @@ import Container from '../components/Container.astro';
           <h2 class="text-3xl font-bold text-zinc-900">Apply for Your 14-Day Free Trial</h2>
           <p class="mt-2 text-zinc-600">Tell us a bit about yourself so we can ensure Home Guardian is right for your family.</p>
           <div class="mt-6 bg-white border border-zinc-200 rounded-3xl p-6 lg:p-8 shadow-sm">
-            <form action="https://formbold.com/s/9xIPX" method="POST" class="space-y-6">
-              <input type="hidden" name="redirect" value="/thank-you" />
+            <form action="https://formbold.com/s/9xlPX" method="POST" class="space-y-6">
               <h3 class="text-lg font-semibold">Your Information</h3>
               <div class="grid gap-4 lg:grid-cols-2">
                 <div class="lg:col-span-2">
-                  <label class="block text-sm font-medium text-zinc-700 mb-1" for="full_name">Full Name *</label>
-                  <input id="full_name" name="full_name" required class="w-full rounded-xl border border-zinc-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#B9FF66]" placeholder="Jane Doe" />
+                  <label class="block text-sm font-medium text-zinc-700 mb-1" for="name">Full Name *</label>
+                  <input id="name" name="name" required class="w-full rounded-xl border border-zinc-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#B9FF66]" placeholder="Jane Doe" />
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-zinc-700 mb-1" for="phone">Phone Number *</label>
@@ -178,12 +177,12 @@ import Container from '../components/Container.astro';
 
               <h3 class="pt-2 text-lg font-semibold">Your Concerns</h3>
               <div class="grid gap-3">
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concern_screen_time" /> <span>Too much screen time</span></label>
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concern_inappropriate" /> <span>Inappropriate content</span></label>
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concern_social_media" /> <span>Social media addiction</span></label>
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concern_gaming" /> <span>Gaming addiction</span></label>
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concern_safety" /> <span>Online safety/privacy</span></label>
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concern_ads" /> <span>Ads and distractions</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concerns[]" value="Too much screen time" /> <span>Too much screen time</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concerns[]" value="Inappropriate content" /> <span>Inappropriate content</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concerns[]" value="Social media addiction" /> <span>Social media addiction</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concerns[]" value="Gaming addiction" /> <span>Gaming addiction</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concerns[]" value="Online safety/privacy" /> <span>Online safety/privacy</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="concerns[]" value="Ads and distractions" /> <span>Ads and distractions</span></label>
                 <div>
                   <label class="block text-sm font-medium text-zinc-700 mb-1" for="concern_other">Other</label>
                   <input id="concern_other" name="concern_other" class="w-full rounded-xl border border-zinc-300 px-4 py-3" placeholder="Describe any other concerns" />
@@ -222,8 +221,8 @@ import Container from '../components/Container.astro';
               </ul>
 
               <div class="grid gap-3 pt-2">
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="agree_terms" required /> I understand and agree to the trial terms *</label>
-                <label class="inline-flex items-center gap-2"><input type="checkbox" name="agree_deposit" required /> I'm ready to pay AED 300 deposit at installation *</label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="agree_terms" value="yes" required /> I understand and agree to the trial terms *</label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" name="agree_deposit" value="yes" required /> I'm ready to pay AED 300 deposit at installation *</label>
               </div>
 
               <div class="flex items-center justify-between pt-2">
