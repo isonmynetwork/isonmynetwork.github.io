@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+---
+
+<Layout title="Thank You - Home Guardian Trial">
+  <main class="mt-28 mb-24">
+    <Container>
+      <section class="max-w-3xl mx-auto text-center space-y-6">
+        <span class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-sm font-semibold text-zinc-900">Application Received</span>
+        <h1 class="text-4xl font-bold text-zinc-900">Thank You! Your Trial Request Is In</h1>
+        <p class="text-lg text-zinc-600">We’ve received your application for the 14-day Home Guardian trial. A team member will contact you within 2 hours to confirm details and schedule installation.</p>
+        <div class="text-left bg-white border border-zinc-200 rounded-3xl p-6 shadow-sm">
+          <h2 class="text-xl font-semibold">What happens next</h2>
+          <ul class="mt-3 list-disc ml-6 text-zinc-700 space-y-1">
+            <li>We call to confirm your information and answer questions.</li>
+            <li>We agree an installation slot that suits you.</li>
+            <li>Setup takes ~30 minutes at your location.</li>
+            <li>You start your 14-day trial immediately.</li>
+          </ul>
+        </div>
+        <div class="pt-2 flex gap-3 justify-center">
+          <a href="/trial#trial-form" class="px-7 py-3 rounded-full border border-zinc-900 bg-zinc-900 text-white hover:text-[#B9FF66] transition">Back to Trial</a>
+          <a href="/" class="px-7 py-3 rounded-full border border-zinc-900 bg-white hover:bg-zinc-900 hover:text-[#B9FF66] transition">Go to Home</a>
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>
+
