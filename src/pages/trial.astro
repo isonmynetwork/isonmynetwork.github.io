@@ -62,49 +62,79 @@ import Container from '../components/Container.astro';
       </section>
     </Container>
 
-    <!-- SECTION 3: WHAT YOU'LL GET -->
-    <Container>
-      <section class="space-y-8">
-        <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">What's Included in Your Trial</h2>
-        <div class="grid gap-6 lg:grid-cols-2">
-          <ul class="space-y-4 text-zinc-800">
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M11.48 3.499a1.5 1.5 0 0 1 1.04 0l6.75 2.7c.57.228.95.78.95 1.397v5.203a11.95 11.95 0 0 1-8.012 11.3.75.75 0 0 1-.517 0A11.95 11.95 0 0 1 3.75 12.799V7.596c0-.617.38-1.17.95-1.397l6.78-2.7Zm3.53 7.53a.75.75 0 1 0-1.06-1.06l-3.97 3.97-1.72-1.72a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.06 0l4.5-4.5Z" clip-rule="evenodd"/></svg>
-              <span><strong>Network-Wide Ad Blocking</strong> — no ads on phones, tablets, computers, or TVs</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 1.5a4.5 4.5 0 0 0-4.5 4.5V9H6a2.25 2.25 0 0 0-2.25 2.25v7.5A2.25 2.25 0 0 0 6 21h12a2.25 2.25 0 0 0 2.25-2.25v-7.5A2.25 2.25 0 0 0 18 9h-1.5V6A4.5 4.5 0 0 0 12 1.5ZM9 9V6a3 3 0 1 1 6 0v3H9Z" clip-rule="evenodd"/></svg>
-              <span><strong>Parental Controls</strong> — block inappropriate websites and content automatically</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21Zm-8.4 10.5a8.4 8.4 0 0 0 13.5 6.7L6.3 7.9a8.36 8.36 0 0 0-2.7 4.1Zm8.4-8.4a8.36 8.36 0 0 0-4.1 1.2l10.8 10.8a8.4 8.4 0 0 0-6.7-12Z" clip-rule="evenodd"/></svg>
-              <span><strong>YouTube Ad Removal</strong> — watch without interruptions on all devices</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12.97 2.29a1.5 1.5 0 0 0-1.94 0l-7.5 6.5a1.5 1.5 0 0 0-.53 1.14V12a9 9 0 0 0 9 9h0a9 9 0 0 0 9-9V9.93c0-.43-.19-.84-.53-1.14l-7.5-6.5ZM12 8.25a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" clip-rule="evenodd"/></svg>
-              <span><strong>Safe Search Enforcement</strong> — Google, Bing, and YouTube safe search</span>
-            </li>
-          </ul>
-          <ul class="space-y-4 text-zinc-800">
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M3.75 3A.75.75 0 0 1 4.5 3v15.75H21a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75V3.75A.75.75 0 0 1 3.75 3Z"/><path d="M7.5 13.5A1.5 1.5 0 0 1 9 12h1.5a1.5 1.5 0 0 1 1.5 1.5V18H7.5v-4.5Zm6-3A1.5 1.5 0 0 1 15 9h1.5A1.5 1.5 0 0 1 18 10.5V18h-4.5v-7.5Z"/></svg>
-              <span><strong>Real-Time Statistics</strong> — see what's blocked and view reports</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M11.42 3.06a3.9 3.9 0 0 0 5.52 4.9l2.3 2.3a1.5 1.5 0 0 1 0 2.12l-4.24 4.24a1.5 1.5 0 0 1-2.12 0l-2.3-2.3a3.9 3.9 0 0 0-4.9-5.52l2.12-2.12a1.5 1.5 0 0 1 2.12 0l.94.94a2.4 2.4 0 0 0 3.4-3.4l-.94-.94a1.5 1.5 0 0 1 0-2.12L11.42 3.06Z"/><path d="M7.5 14.25 3 18.75V21h2.25l4.5-4.5-2.25-2.25z"/></svg>
-              <span><strong>Professional Installation</strong> — we handle everything</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a8.25 8.25 0 0 0-8.25 8.25v1.5A2.25 2.25 0 0 0 6 15h.75v3.75A2.25 2.25 0 0 0 9 21h2.25a.75.75 0 0 0 .75-.75V18h.75v2.25c0 .414.336.75.75.75H16.5A2.25 2.25 0 0 0 18.75 18.75V15H19.5a2.25 2.25 0 0 0 2.25-2.25v-1.5A8.25 8.25 0 0 0 12 3Z"/></svg>
-              <span><strong>Full Support During Trial</strong> — WhatsApp/phone support included</span>
-            </li>
-          </ul>
-        </div>
-        <p class="text-sm text-zinc-500 italic pt-2">
-          💡 Your trial gives you full Home Guardian service. After 14 days, you can choose to subscribe (from AED 149/month) or return the device for a full AED 300 refund.
-        </p>
-      </section>
-    </Container>
+<!-- SECTION 3: WHAT YOU'LL GET -->
+<Container>
+  <section class="space-y-8">
+    <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">What's Included in Your Trial</h2>
+    <div class="grid gap-6 lg:grid-cols-2">
+
+      <!-- LEFT COLUMN -->
+      <ul class="space-y-4 text-zinc-800">
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M11.48 3.499a1.5 1.5 0 0 1 1.04 0l6.75 2.7c.57.228.95.78.95 1.397v5.203a11.95 11.95 0 0 1-8.012 11.3.75.75 0 0 1-.517 0A11.95 11.95 0 0 1 3.75 12.799V7.596c0-.617.38-1.17.95-1.397l6.78-2.7Zm3.53 7.53a.75.75 0 1 0-1.06-1.06l-3.97 3.97-1.72-1.72a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.06 0l4.5-4.5Z" clip-rule="evenodd"/>
+          </svg>
+          <span><strong>Network-Wide Ad Blocking</strong> — enjoy a cleaner, faster internet with ads removed across all devices</span>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M12 1.5a4.5 4.5 0 0 0-4.5 4.5V9H6a2.25 2.25 0 0 0-2.25 2.25v7.5A2.25 2.25 0 0 0 6 21h12a2.25 2.25 0 0 0 2.25-2.25v-7.5A2.25 2.25 0 0 0 18 9h-1.5V6A4.5 4.5 0 0 0 12 1.5ZM9 9V6a3 3 0 1 1 6 0v3H9Z" clip-rule="evenodd"/>
+          </svg>
+          <span><strong>Parental Controls</strong> — automatically block inappropriate websites and content for safer browsing</span>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21Zm-8.4 10.5a8.4 8.4 0 0 0 13.5 6.7L6.3 7.9a8.36 8.36 0 0 0-2.7 4.1Zm8.4-8.4a8.36 8.36 0 0 0-4.1 1.2l10.8 10.8a8.4 8.4 0 0 0-6.7-12Z" clip-rule="evenodd"/>
+          </svg>
+          <span>
+            <strong>YouTube Ad Removal (Smart TV)</strong> — skip ads and sponsor segments on supported Smart TVs 
+            <em class="text-zinc-500">(requires Smart TV with YouTube app)</em>
+          </span>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.97 2.29a1.5 1.5 0 0 0-1.94 0l-7.5 6.5a1.5 1.5 0 0 0-.53 1.14V12a9 9 0 0 0 9 9h0a9 9 0 0 0 9-9V9.93c0-.43-.19-.84-.53-1.14l-7.5-6.5ZM12 8.25a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" clip-rule="evenodd"/>
+          </svg>
+          <span><strong>Safe Search Enforcement</strong> — keeps Google, Bing, and YouTube results family-friendly</span>
+        </li>
+      </ul>
+
+      <!-- RIGHT COLUMN -->
+      <ul class="space-y-4 text-zinc-800">
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.75 3A.75.75 0 0 1 4.5 3v15.75H21a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75V3.75A.75.75 0 0 1 3.75 3Z"/>
+            <path d="M7.5 13.5A1.5 1.5 0 0 1 9 12h1.5a1.5 1.5 0 0 1 1.5 1.5V18H7.5v-4.5Zm6-3A1.5 1.5 0 0 1 15 9h1.5A1.5 1.5 0 0 1 18 10.5V18h-4.5v-7.5Z"/>
+          </svg>
+          <span><strong>Real-Time Statistics</strong> — instantly see what’s being blocked and monitor your family’s usage</span>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.42 3.06a3.9 3.9 0 0 0 5.52 4.9l2.3 2.3a1.5 1.5 0 0 1 0 2.12l-4.24 4.24a1.5 1.5 0 0 1-2.12 0l-2.3-2.3a3.9 3.9 0 0 0-4.9-5.52l2.12-2.12a1.5 1.5 0 0 1 2.12 0l.94.94a2.4 2.4 0 0 0 3.4-3.4l-.94-.94a1.5 1.5 0 0 1 0-2.12L11.42 3.06Z"/>
+            <path d="M7.5 14.25 3 18.75V21h2.25l4.5-4.5-2.25-2.25z"/>
+          </svg>
+          <span><strong>Professional Installation</strong> — we handle everything for you, setup in under 30 minutes</span>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-zinc-900 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3a8.25 8.25 0 0 0-8.25 8.25v1.5A2.25 2.25 0 0 0 6 15h.75v3.75A2.25 2.25 0 0 0 9 21h2.25a.75.75 0 0 0 .75-.75V18h.75v2.25c0 .414.336.75.75.75H16.5A2.25 2.25 0 0 0 18.75 18.75V15H19.5a2.25 2.25 0 0 0 2.25-2.25v-1.5A8.25 8.25 0 0 0 12 3Z"/>
+          </svg>
+          <span><strong>Full Support During Trial</strong> — WhatsApp and phone support included throughout your trial</span>
+        </li>
+      </ul>
+    </div>
+
+    <p class="text-sm text-zinc-500 italic pt-2">
+      💡 Your 14-day trial includes the full Home Guardian service. After the trial, you can subscribe (from AED 149/month) 
+      or return the device for a full AED 300 refund.
+    </p>
+  </section>
+</Container>
 
     <!-- SECTION 4: TRIAL REGISTRATION FORM -->
     <Container>
