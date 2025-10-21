@@ -1,98 +1,149 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Container from '../components/Container.astro';
-import Dirham from '../components/Dirham.astro';
 ---
 
 <Layout title="Refer a Friend – Home Guardian | IsOnMyNet.Work">
   <main class="mt-28 mb-24 space-y-24">
 
-    <!-- HERO -->
+    <!-- SECTION 1: HERO -->
     <Container>
       <section class="grid gap-12 lg:grid-cols-2 items-center">
         <div class="space-y-6">
           <span class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-sm font-semibold text-zinc-900">Referral Program</span>
           <h1 class="text-4xl lg:text-5xl font-bold text-zinc-900">
-            Earn <Dirham />100 for Every Successful Referral
+            Earn
+            <span class="inline-flex items-baseline gap-1">
+              <img src="/dirham.svg" alt="Dirham symbol" class="h-[1em] w-[1em] inline-block relative top-[0.15em]" />
+              100
+            </span>
+            for Every Successful Referral
           </h1>
           <p class="text-lg text-zinc-600">
             Help your friends protect their families online with Home Guardian. For every successful signup you refer, you earn cash rewards.
           </p>
           <ul class="text-zinc-700 space-y-1">
-            <li>✅ You earn <Dirham />100 per new subscriber</li>
-            <li>✅ Your friend gets <Dirham />100 off setup or first month</li>
+            <li>
+              ✅ You earn
+              <span class="inline-flex items-baseline gap-1 font-semibold">
+                <img src="/dirham.svg" alt="Dirham symbol" class="h-[1em] w-[1em] inline-block relative top-[0.15em]" />
+                100
+              </span>
+              per new subscriber
+            </li>
+            <li>
+              ✅ Your friend gets
+              <span class="inline-flex items-baseline gap-1 font-semibold">
+                <img src="/dirham.svg" alt="Dirham symbol" class="h-[1em] w-[1em] inline-block relative top-[0.15em]" />
+                100
+              </span>
+              off setup or first month
+            </li>
             <li>✅ Unlimited referrals — no cap</li>
           </ul>
-          <p class="text-sm text-zinc-500">
+          <div class="pt-2 text-sm text-zinc-500">
             Only active subscribers are eligible. Rewards transferred within 7 days of payment clearing.
-          </p>
+          </div>
         </div>
 
         <div class="bg-white border border-zinc-200 rounded-3xl p-6 lg:p-10 shadow-card">
-          <img src="/referral-dirham.png" alt="Parents sharing referral link via phone" class="w-full rounded-2xl object-cover" loading="lazy" />
+          <img src="/referral.png" alt="Parents sharing referral link via phone" class="w-full rounded-2xl object-cover" loading="lazy" />
         </div>
       </section>
     </Container>
 
-    <!-- HOW IT WORKS -->
+    <!-- SECTION 2: HOW IT WORKS -->
     <Container>
       <section class="space-y-10">
-        <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">How It Works</h2>
+        <h2 id="how-it-works" class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">How It Works</h2>
         <div class="grid gap-6 lg:grid-cols-3">
           <div class="rounded-3xl border border-zinc-200 p-6 bg-white">
             <div class="text-5xl font-bold text-zinc-900">1</div>
             <h3 class="mt-2 text-xl font-semibold">Share Your Code</h3>
-            <p class="mt-2 text-zinc-600">Each subscriber gets a unique referral code. Share it with friends or family through WhatsApp or SMS.</p>
+            <p class="mt-2 text-zinc-600">
+              Each subscriber gets a unique referral code. Share it with friends or family through WhatsApp or SMS.
+            </p>
           </div>
           <div class="rounded-3xl border border-zinc-200 p-6 bg-white">
             <div class="text-5xl font-bold text-zinc-900">2</div>
             <h3 class="mt-2 text-xl font-semibold">They Subscribe</h3>
             <p class="mt-2 text-zinc-600">
-              When your friend joins Home Guardian as a new customer (not a trial user), they receive <Dirham />100 off.
+              When your friend joins Home Guardian as a new customer (not a trial user), they receive
+              <span class="inline-flex items-baseline gap-1 font-semibold">
+                <img src="/dirham.svg" alt="Dirham symbol" class="h-[1em] w-[1em] inline-block relative top-[0.15em]" />
+                100
+              </span>
+              off.
             </p>
           </div>
           <div class="rounded-3xl border border-zinc-200 p-6 bg-white">
             <div class="text-5xl font-bold text-zinc-900">3</div>
             <h3 class="mt-2 text-xl font-semibold">You Earn</h3>
             <p class="mt-2 text-zinc-600">
-              Once their payment clears, you receive <Dirham />100 cash within 7 days — no limits on referrals!
+              Once their payment clears, you receive
+              <span class="inline-flex items-baseline gap-1 font-semibold">
+                <img src="/dirham.svg" alt="Dirham symbol" class="h-[1em] w-[1em] inline-block relative top-[0.15em]" />
+                100
+              </span>
+              cash via transfer within 7 days. No limits — refer as many as you like!
             </p>
           </div>
         </div>
       </section>
     </Container>
 
-    <!-- FAQ -->
+    <!-- SECTION 3: FAQ -->
     <Container>
       <section class="space-y-8">
         <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">Referral FAQs</h2>
         <div class="grid gap-6 lg:grid-cols-2 text-zinc-700">
-          <div><h3 class="font-semibold">Who can participate?</h3><p>Only existing Home Guardian subscribers can refer new users and earn rewards.</p></div>
-          <div><h3 class="font-semibold">Can I refer someone who took a trial?</h3><p>No — trial users and previous customers are not eligible for rewards.</p></div>
-          <div><h3 class="font-semibold">How do I get paid?</h3><p>Rewards are transferred directly to your account within 7 days of your referral’s first payment clearing.</p></div>
-          <div><h3 class="font-semibold">Is there a referral limit?</h3><p>No limits — you can earn as much as you share!</p></div>
+          <div>
+            <h3 class="font-semibold">Who can participate?</h3>
+            <p>Only existing Home Guardian subscribers can refer new users and earn rewards.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Can I refer someone who took a trial?</h3>
+            <p>No — trial users and previous customers are not eligible for the reward.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">How do I get paid?</h3>
+            <p>Rewards are transferred directly to your account within 7 days of your referral’s first payment clearing.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Is there a referral limit?</h3>
+            <p>There’s no limit — you can earn as many times as you refer!</p>
+          </div>
         </div>
       </section>
     </Container>
 
-    <!-- CTA -->
+    <!-- SECTION 4: FINAL CTA -->
     <Container>
       <section class="text-center space-y-6">
         <h2 class="text-3xl font-bold">Ready to Share Home Guardian?</h2>
         <p class="text-zinc-600">
-          Help your friends protect their families and earn <Dirham />100 for every successful signup.
+          Help your friends protect their families and earn
+          <span class="inline-flex items-baseline gap-1 font-semibold">
+            <img src="/dirham.svg" alt="Dirham symbol" class="h-[1em] w-[1em] inline-block relative top-[0.15em]" />
+            100
+          </span>
+          for every successful signup.
         </p>
         <div class="pt-2 flex justify-center">
-          <a href="https://wa.me/971508776444?text=Hey!%20Check%20out%20Home%20Guardian.%20Use%20my%20referral%20code%20to%20get%20a%20discount!"
+          <a href="https://wa.me/971508776444?text=Hey!%20Check%20out%20Home%20Guardian.%20Use%20my%20referral%20code%20to%20get%20a%20discount%20and%20help%20protect%20your%20home!"
              target="_blank"
              class="inline-flex items-center gap-2 px-9 py-5 rounded-full border border-zinc-900 bg-zinc-900 text-white hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">
+             <!-- WhatsApp icon -->
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+               <path fill-rule="evenodd" d="M12 2C6.478 2 2 6.478 2 12c0 1.99.584 3.845 1.584 5.405L2 22l4.716-1.527A9.94 9.94 0 0 0 12 22c5.522 0 10-4.478 10-10S17.522 2 12 2ZM7.5 8.25c.211-.471.562-.833 1.011-.986.278-.093.556-.041.833.147l1.281.874c.211.144.373.355.443.591l.25.876c.053.18.007.366-.128.519l-.447.5c.144.166.403.461.878.91.448.423.803.68 1.034.81l.486-.453a.617.617 0 0 1 .487-.155l.875.097c.26.03.492.155.656.36l.874 1.093c.19.236.237.514.144.792-.153.45-.516.801-.986 1.012a3.253 3.253 0 0 1-1.31.27c-.768 0-1.534-.228-2.26-.655-.934-.543-1.78-1.343-2.568-2.281-.74-.884-1.317-1.8-1.723-2.723-.39-.881-.56-1.69-.504-2.406.03-.44.173-.853.435-1.216Z" clip-rule="evenodd"/>
+             </svg>
              SHARE VIA WHATSAPP →
           </a>
         </div>
         <p class="text-sm text-zinc-500">
-          Questions? WhatsApp: 
-          <a href="https://wa.me/971508776444" class="underline hover:text-[#B9FF66]">+971-50-877-6444</a> 
-          or Call: 
+          Questions? WhatsApp:
+          <a href="https://wa.me/971508776444" class="underline hover:text-[#B9FF66]">+971-50-877-6444</a>
+          or Call:
           <a href="tel:+971508779444" class="underline hover:text-[#B9FF66]">+971-50-877-9444</a>
         </p>
       </section>
