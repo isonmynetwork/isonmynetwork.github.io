@@ -7,4 +7,5 @@ export default defineConfig({
   output: 'server',
   adapter: cloudflare(),
   site: 'https://isonmynet.work',
+  trailingSlash: 'ignore', // 👈 This lets both /referral and /referral/ work
 });
