@@ -1,0 +1,12 @@
+---
+const { class: className = "" } = Astro.props;
+---
+
+<span class={`inline-flex items-baseline gap-1 text-inherit ${className}`}>
+  <img
+    src="/dirham.svg"
+    alt="Dirham symbol"
+    class="h-[1em] w-[1em] inline-block relative top-[0.15em] text-inherit"
+    loading="lazy"
+  />
+</span>
