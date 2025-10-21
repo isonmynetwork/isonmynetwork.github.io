@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+---
+
+<Layout title="Refer a Friend - Home Guardian | IsOnMyNet.Work">
+  <main class="mt-28 mb-24 space-y-24">
+
+    <!-- SECTION 1: HERO -->
+    <Container>
+      <section class="grid gap-12 lg:grid-cols-2 items-center">
+        <div class="space-y-6">
+          <span class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-sm font-semibold text-zinc-900">Home Guardian</span>
+          <h1 class="text-4xl lg:text-5xl font-bold text-zinc-900">Share Home Guardian. Earn Rewards.</h1>
+          <p class="text-lg text-zinc-600">Help more families stay protected — and get rewarded for it. For every friend who subscribes using your referral code, you’ll earn <strong>AED 100 cash</strong>, and they’ll get <strong>AED 100 off</strong> their setup or first month.</p>
+          <div class="flex items-center gap-4 pt-2">
+            <a href="#how-it-works" class="px-9 py-5 rounded-full border border-zinc-900 bg-zinc-900 text-white hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">SEE HOW IT WORKS →</a>
+          </div>
+        </div>
+        <div class="bg-white border border-zinc-200 rounded-3xl p-6 lg:p-10 shadow-card">
+          <img src="/referral.png" alt="Share Home Guardian and earn 100 with the new UAE dirham symbol" class="w-full rounded-2xl object-cover" loading="lazy" />
+        </div>
+      </section>
+    </Container>
+
+    <!-- SECTION 2: HOW IT WORKS -->
+    <Container id="how-it-works">
+      <section class="space-y-10">
+        <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">How the Referral Program Works</h2>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <div class="rounded-3xl border border-zinc-200 p-6 bg-white">
+            <div class="text-5xl font-bold text-zinc-900">1</div>
+            <h3 class="mt-2 text-xl font-semibold">Share Your Code</h3>
+            <p class="mt-2 text-zinc-600">Each active subscriber gets a unique referral code. Share it with family or friends through WhatsApp or social media.</p>
+          </div>
+          <div class="rounded-3xl border border-zinc-200 p-6 bg-white">
+            <div class="text-5xl font-bold text-zinc-900">2</div>
+            <h3 class="mt-2 text-xl font-semibold">They Subscribe</h3>
+            <p class="mt-2 text-zinc-600">Your friend joins Home Guardian as a new customer (not a trial) and gets AED 100 off their setup or first month.</p>
+          </div>
+          <div class="rounded-3xl border border-zinc-200 p-6 bg-white">
+            <div class="text-5xl font-bold text-zinc-900">3</div>
+            <h3 class="mt-2 text-xl font-semibold">You Get Paid</h3>
+            <p class="mt-2 text-zinc-600">Once their subscription payment clears, you receive AED 100 cash within 7 days — directly to your account.</p>
+          </div>
+        </div>
+      </section>
+    </Container>
+
+    <!-- SECTION 3: REFERRAL TERMS -->
+    <Container>
+      <section class="space-y-8">
+        <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">Referral Terms & Conditions</h2>
+        <ul class="space-y-3 text-zinc-700 list-disc ml-5">
+          <li>Only existing paid Home Guardian subscribers are eligible to refer.</li>
+          <li>Referred customers must be completely new — not current or past trial users.</li>
+          <li>A valid referral code must be used during sign-up or installation.</li>
+          <li>The referred family must activate a paid subscription (not the free trial).</li>
+          <li>Referrer earns AED 100 cash for each valid referral with no limit.</li>
+          <li>The referred family receives AED 100 discount on their setup or first month.</li>
+          <li>Payment is processed within 7 days after the referred payment clears.</li>
+          <li>Rewards are paid via bank transfer or agreed payment method.</li>
+          <li>Referrals without a valid code or payment confirmation are not eligible.</li>
+        </ul>
+      </section>
+    </Container>
+
+    <!-- SECTION 4: SHARE REFERRAL -->
+    <Container>
+      <section class="text-center space-y-6">
+        <h2 class="text-3xl font-bold text-zinc-900">Share Your Code & Start Earning</h2>
+        <p class="text-zinc-600 max-w-2xl mx-auto">Every successful referral helps another family stay protected online — and earns you rewards. There’s no limit to how much you can earn!</p>
+        <div class="pt-2">
+          <a href="https://wa.me/?text=Join%20Home%20Guardian%20and%20get%20AED%20100%20off%20your%20setup!%20Use%20my%20referral%20code:%20[YOURCODE]%20Visit%20https://isonmynet.work/trial"
+             target="_blank"
+             class="px-9 py-5 rounded-full border border-zinc-900 bg-zinc-900 text-white hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">
+             SHARE VIA WHATSAPP →
+          </a>
+        </div>
+        <p class="text-sm text-zinc-500 italic">Replace <code>[YOURCODE]</code> with your personal referral code.</p>
+      </section>
+    </Container>
+
+    <!-- SECTION 5: FAQ -->
+    <Container>
+      <section class="space-y-6">
+        <h2 class="inline-block rounded-2xl bg-[#B9FF66] px-4 py-2 text-2xl font-bold text-zinc-900">Frequently Asked Questions</h2>
+        <div class="grid gap-6 lg:grid-cols-2 text-zinc-700">
+          <div>
+            <div class="font-semibold">When will I receive my reward?</div>
+            <p>Within 7 days after your referral’s subscription payment clears.</p>
+          </div>
+          <div>
+            <div class="font-semibold">Can I refer someone who did a trial?</div>
+            <p>No — only new families who have never used Home Guardian before qualify.</p>
+          </div>
+          <div>
+            <div class="font-semibold">Is there a limit to how many I can refer?</div>
+            <p>No limit at all! You earn AED 100 for every successful paid signup.</p>
+          </div>
+          <div>
+            <div class="font-semibold">How does my friend apply the referral code?</div>
+            <p>They enter your code when filling out the installation or signup form. We handle the discount automatically.</p>
+          </div>
+        </div>
+      </section>
+    </Container>
+
+    <!-- SECTION 6: FINAL CTA -->
+    <Container>
+      <section class="text-center space-y-6">
+        <h2 class="text-3xl font-bold text-zinc-900">Ready to Earn with Every Referral?</h2>
+        <p class="text-zinc-600">Invite friends and family today — protect their homes while earning unlimited rewards.</p>
+        <div class="pt-2">
+          <a href="https://wa.me/?text=Join%20Home%20Guardian%20and%20get%20AED%20100%20off!%20Use%20my%20referral%20code:%20[YOURCODE]%20Visit%20https://isonmynet.work/trial"
+             target="_blank"
+             class="px-9 py-5 rounded-full border border-zinc-900 bg-zinc-900 text-white hover:text-[#B9FF66] transition duration-300 ease-in-out transform hover:scale-110">
+             SHARE YOUR CODE NOW →
+          </a>
+        </div>
+        <p class="text-sm text-zinc-500">Questions? WhatsApp: <a href="https://wa.me/971508776444" class="underline hover:text-[#B9FF66]">+971-50-877-6444</a> or Call: <a href="tel:+971508779444" class="underline hover:text-[#B9FF66]">+971-50-877-9444</a></p>
+      </section>
+    </Container>
+
+  </main>
+</Layout>
